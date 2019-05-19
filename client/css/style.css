@@ -1,6 +1,6 @@
 body {
 	margin:  0;
-	background-image: url("/img/two.png");
+	background-image: url("/client/img/two.png");
 	width: 100%;
 	background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -408,4 +408,54 @@ opacity: ;
 		text-align: center;
 	    margin: 44px 0 30px;
 	}
+}
+
+
+
+
+
+
+.input-container {
+	/* margin: 3em auto; */
+	margin-top: 10px;
+  max-width: 400px;
+  background-color: #EDEDED;
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.file-info {
+	font-size: 0.9em;
+	/* margin-left: 2rem; */
+}
+
+.browse-btn {
+  background: #4835d4;
+  color: #fff;
+  min-height: 35px;
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.browse-btn:hover {
+  background: #1c4743;
+}
+
+@media (max-width: 300px) {
+  button {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .file-info {
+    display: block;
+    margin: 10px 5px;
+  }
 }

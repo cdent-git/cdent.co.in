@@ -2,16 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Form-v10 by Colorlib</title>
+	<title>Apply For cDent</title>
 	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
 	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
-    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<!-- <script src="/client/js/custom.js"></script> -->
 </head>
 <body class="form-v10">
+
+		
 	<div class="page-content">
 		<div class="form-v10-content">
 			<form class="form-detail" action="#" method="post" id="myform">
@@ -19,10 +23,10 @@
 					<h2>General Infomation</h2>
 					<div class="form-row">
 						<select name="title">
-						    <option class="option" value="title">Title</option>
-						    <option class="option" value="businessman">Businessman</option>
-						    <option class="option" value="reporter">Reporter</option>
-						    <option class="option" value="secretary">Secretary</option>
+						    
+						    <option class="option" value="businessman">Mr. </option>
+						    <option class="option" value="reporter">Ms. </option>
+						    
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
@@ -37,94 +41,130 @@
 						</div>
 					</div>
 					<div class="form-row">
-						<select name="position">
+						<select name="position" >
 						    <option value="position">Position</option>
-						    <option value="director">Director</option>
-						    <option value="manager">Manager</option>
-						    <option value="employee">Employee</option>
+							<option value="director">College Principal</option>
+							<option value="employee">College Administrator</option>
+							<option value="manager">College Faculty</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
 						</span>
 					</div>
 					<div class="form-row">
-						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
+						<input type="Email" name="Email" class="PEmail" id="PEmail" placeholder="Your Email" required>
 					</div>
-					<div class="form-group">
-						<div class="form-row form-row-3">
-							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
-						</div>
-						<div class="form-row form-row-4">
-							<select name="employees">
-							    <option value="employees">Employees</option>
-							    <option value="trainee">Trainee</option>
-							    <option value="colleague">Colleague</option>
-							    <option value="associate">Associate</option>
-							</select>
-							<span class="select-btn">
-							  	<i class="zmdi zmdi-chevron-down"></i>
-							</span>
-						</div>
+					<br>
+					<div class="form-row">
+					Your id Proof
+					<div class="input-container">
+						<input type="file" id="real-input">
+						  <button class="browse-btn" required>
+							Browse Files
+						  </button>
+						<span class="file-info">Upload a file</span>
+					  </div>
 					</div>
+					<br>
+					<div class="form-row">	
+							College id Proof	
+							<div class="input-container">
+									<input type="file" id="real-input">
+									  <button class="browse-btn" id="btn" required>
+										Browse Files
+									  </button>
+									<span class="file-info" id="flieU">Upload a file</span>
+								  </div>
+							</div>
+
+
 				</div>
 				<div class="form-right">
-					<h2>Contact Details</h2>
+					<h2>College Details</h2>
+
 					<div class="form-row">
-						<input type="text" name="street" class="street" id="street" placeholder="Street + Nr" required>
+						<input type="text" name="CName" class="Cname" id="CName" placeholder="College Name" required>
 					</div>
 					<div class="form-row">
-						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
+						<input type="text" name="address" class="address" id="address" placeholder="Address" required>
 					</div>
+					
 					<div class="form-group">
 						<div class="form-row form-row-1">
 							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
 						</div>
-						<div class="form-row form-row-2">
-							<select name="place">
-							    <option value="place">Place</option>
-							    <option value="Street">Street</option>
-							    <option value="District">District</option>
-							    <option value="City">City</option>
-							</select>
-							<span class="select-btn">
-							  	<i class="zmdi zmdi-chevron-down"></i>
-							</span>
+						<div class="form-row">
+							<input type="Place" name="Place" class="Place" id="Place" placeholder="Place" required>
 						</div>
 					</div>
 					<div class="form-row">
 						<select name="country">
 						    <option value="country">Country</option>
-						    <option value="Vietnam">Vietnam</option>
-						    <option value="Malaysia">Malaysia</option>
 						    <option value="India">India</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
 						</span>
 					</div>
-					<div class="form-group">
-						<div class="form-row form-row-1">
-							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
-						</div>
-						<div class="form-row form-row-2">
-							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
-						</div>
-					</div>
 					<div class="form-row">
-						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+						<input type="url" name="Cweb" class="Cweb" id="Cweb" placeholder="College Website URL" required>
+					</div>
+				
+					<div class="form-row">
+						<input type="email" name="Cemail" id="Cemail" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="College Email">
 					</div>
 					<div class="form-checkbox">
-						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of cDent.in</p>
 						  	<input type="checkbox" name="checkbox">
 						  	<span class="checkmark"></span>
 						</label>
 					</div>
 					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Register Badge">
+						<input type="submit" name="register" class="register" value="Register College">
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+	<script>
+const uploadButton = document.querySelector('.browse-btn');
+const uploadButton1=document.getElementById("btn");  
+const fileInfo0 = document.querySelector('.file-info');
+const fileInfo1=document.getElementById("flieU");
+const realInput = document.getElementById('real-input');
+var n;
+
+uploadButton.addEventListener('click', (e) => {
+	n=1;
+  realInput.click(true);
+	
+
+});
+
+uploadButton1.addEventListener('click', (e) => {
+	n=0;
+  realInput.click(false);
+ 
+	
+});
+
+realInput.addEventListener('change', (i) => {
+  const name = realInput.value.split(/\\|\//).pop();
+  const truncated = name.length > 50 
+    ? name.substr(name.length - 50) 
+    : name;
+ 
+ if(n==1){
+	fileInfo0.innerHTML = truncated;
+ }
+ else if(n==0){
+	fileInfo1.innerHTML = truncated;
+ }
+	
+ 
+  
+});
+		</script>
+</body>
 </html>
